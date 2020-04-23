@@ -5,8 +5,6 @@ const listRepos = async username => {
         .then(res => res.json())
         .catch(error => console.error(error));
 
-
-    console.log("repos", repos);
     const markup = repos
         .map(
             repo => 
